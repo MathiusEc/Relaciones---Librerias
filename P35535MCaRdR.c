@@ -13,37 +13,12 @@ NCR: 5535
 //Es una cabecera de la biblioteca estándar de C que proporciona funciones para manipular
 // y operar con cadenas de caracteres.
 
+#include "C:\Users\USER\Desktop\Respaldo Mathías\Clases Mathías\Universidad\UDLA\Semestre I\Mate Discretas I\Relaciones - Recurrencia\Librerias\Funciones_de_Recurrencia.h.txt"
+// Se incluye mi librería personal, en donde se encuntran las funciones recursivas para invertir una cadena,
+// calcular el factorial de un número y la sucesión de Fibonacci.
+// Estas funciones van a ser llamadas dentro del programa principal.
 
-void invertirTex(char *texto, int longitud) {         // Declara la función invertirTex que recibe un puntero a una cadena y su longitud.
-    int inicio = 0;                                   // Índice Inicial
-    int fin = longitud - 1;                           // Índice Final
-    while (inicio < fin) {                            // Bucle que invierte caracteres
-        char temp = texto[inicio];                    // Almacena temporalmente el carácter en la posición inicio.
-        texto[inicio] = texto[fin];                   // Mueve el carácter de fin a inicio.
-        texto[fin] = temp;                            // Mueve el carácter guardado en temp a fin.
-        inicio++;                                     // Incrementa el valor de inicio.
-        fin--;                                        // Decrementa el valor de fin.
-    }
-}
-
-int fibonacci(int num){                               // Declara la función fibonacci que recibe un número entero.
-    if(num<=0){                                       // Si el número es menor o igual a cero devuelve 0
-        return 0;
-    }else if(num == 1){                               // Si el número es igual a 1 devuelve 1
-        return 1;
-    }else{
-       return fibonacci(num-1) + fibonacci(num-2);    // si no se cumple ninguna de las condiciones anteriores,
-    }                                                 // llama recursivamente a fibonacci con num-1 y num-2, y retorna la suma de ambos.
-}
-
-int factorial(int num){                               // Función que calcula el factorial de un número.
-    if(num==0){                                       // Si el número es igual a 0 devuelve 1.
-        return 1;
-    }else{
-        return num*factorial(num-1);                  // Si no, llama recursivamente a factorial con num-1 y retorna la multiplicación de ambos. 
-    }
-}
-
+// Cada función tiene un comentario explicando su funcionamiento y los parámetros que recibe.
 
 
 int main(){                                           // Función principal
@@ -136,7 +111,7 @@ int main(){                                           // Función principal
                 }
             } while (num<1);                       // Se repite mientras num sea menor a 1.
 
-            printf("\n La sucesión de Fibonacci hasta %d es: ",num);
+            printf("\n La sucesión de Fibonacci hasta %d  números es: ",num);
             // Imprime en pantalla la cantidad de números de la sucesión de Fibonacci que se visualizarán.
 
             for (int i=1; i<=num; i++)             // Bucle que se ejecuta desde 1 hasta num.
