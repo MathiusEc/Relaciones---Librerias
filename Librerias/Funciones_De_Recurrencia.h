@@ -1,3 +1,7 @@
+/*
+Invertir una Cadena
+*/
+
 void invertirTex(char *texto, int longitud) {         // Declara la función invertirTex que recibe un puntero a una cadena y su longitud.
     int inicio = 0;                                   // Índice Inicial
     int fin = longitud - 1;                           // Índice Final
@@ -12,6 +16,9 @@ void invertirTex(char *texto, int longitud) {         // Declara la función inv
 
 
 
+/*
+Serie de Fibonacci
+*/
 
 int fibonacci(int num){                               // Declara la función fibonacci que recibe un número entero.
     if(num<=0){                                       // Si el número es menor o igual a cero devuelve 0
@@ -24,7 +31,9 @@ int fibonacci(int num){                               // Declara la función fib
 }
 
 
-
+/*
+IFactorial de un Número
+*/
 
 int factorial(int num){                               // Función que calcula el factorial de un número.
     if(num==0){                                       // Si el número es igual a 0 devuelve 1.
@@ -33,3 +42,4 @@ int factorial(int num){                               // Función que calcula el
         return num*factorial(num-1);                  // Si no, llama recursivamente a factorial con num-1 y retorna la multiplicación de ambos. 
     }
 }
+

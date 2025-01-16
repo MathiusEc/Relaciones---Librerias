@@ -13,7 +13,7 @@ NCR: 5535
 //Es una cabecera de la biblioteca estándar de C que proporciona funciones para manipular
 // y operar con cadenas de caracteres.
 
-#include "C:\Users\USER\Desktop\Respaldo Mathías\Clases Mathías\Universidad\UDLA\Semestre I\Mate Discretas I\Relaciones - Recurrencia\Librerias\Funciones_de_Recurrencia.h.txt"
+#include ".\Librerias\Funciones_De_Recurrencia.h"
 // Se incluye mi librería personal, en donde se encuntran las funciones recursivas para invertir una cadena,
 // calcular el factorial de un número y la sucesión de Fibonacci.
 // Estas funciones van a ser llamadas dentro del programa principal.
@@ -111,7 +111,7 @@ int main(){                                           // Función principal
                 }
             } while (num<1);                       // Se repite mientras num sea menor a 1.
 
-            printf("\n La sucesión de Fibonacci hasta %d  números es: ",num);
+            printf("\n La sucesión de Fibonacci hasta %d números es: ",num);
             // Imprime en pantalla la cantidad de números de la sucesión de Fibonacci que se visualizarán.
 
             for (int i=1; i<=num; i++)             // Bucle que se ejecuta desde 1 hasta num.
