@@ -32,7 +32,7 @@ int fibonacci(int num){                               // Declara la función fib
 
 
 /*
-IFactorial de un Número
+Factorial de un Número
 */
 
 int factorial(int num){                               // Función que calcula el factorial de un número.
